@@ -4,6 +4,9 @@
 #include <string>
 #include "esp_event.h"
 
+#define CONNECTED_BIT BIT0
+extern EventGroupHandle_t wifi_event_group;
+
 class WiFiManager
 {
 public:
