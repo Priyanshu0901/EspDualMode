@@ -1,7 +1,13 @@
 #include "WiFi_Manager.h"
 
+extern "C" {
+  #include "spiffs_mngr.h"
+}
+
 extern "C" void app_main()
 {
+  init_spiffs();
+
   WiFiManager wifiManager;
 
   // Initialize Wi-Fi
